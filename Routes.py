@@ -4,7 +4,12 @@ from server import App, Response
 @App.route("/forum", methods=["GET"])
 
 @App.route("/forum", methods=["POST"])
+def postForum():
+    from services.postForum import postForum
 
+    Dados = request.get_json()
+    postForum()
+    return jsonify(Response)
 @App.route("/forum/<Id>", methods=["GET"])
 
 @App.route("/forum/inactivate", methods=["POST"])

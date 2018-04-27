@@ -1,4 +1,4 @@
-from models.Post import Postagem,Post
+from models.Forum import Forum,forum
 
 def listarForuns():
-    return Postagem
+    return forum
