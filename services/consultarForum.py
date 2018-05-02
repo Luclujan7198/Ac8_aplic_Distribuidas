@@ -1,9 +1,9 @@
 from models.Forum import forum
 
-def ConsultarPorId(Id):
+def ConsultarPorId(id):
     forum = {}
     for Forum in Alunos:
-        if Forum["Id"] == Id:
+        if Forum["forumId"] == id:
             break
         else:
             Forum = {}

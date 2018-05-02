@@ -1,5 +1,5 @@
-from Models.Forum import Forum,forum
+from models.Forum import forum
 
 def postForum(forumId,criadorId,titulo,descricao,criacaoData,ultimoPostDate):
-    Forum.append({"forumId":forumId, "criadorId":criadorId,"titulo":titulo,"descrição":descricao,"criacaoData":criacaoData,"ultimoPostDate":ultimoPostDate, "Ativo":True})
-    return Forum
+    forum.append({"forumId":forumId, "criadorId":criadorId,"titulo":titulo,"descrição":descricao,"criacaoData":criacaoData,"ultimoPostDate":ultimoPostDate, "Ativo":True,"registro":""})
+    return forum
